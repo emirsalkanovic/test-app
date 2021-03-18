@@ -14,7 +14,6 @@ import {
   COLOR_FONT_BLACK
 } from '../assets/colors/colors';
 
-// import { FONT_AVENIR_MEDIUM } from '../assets/fonts/fonts';
 
 //TextInput - form components used for login/registration forms
 class TextField extends React.Component {
@@ -72,7 +71,6 @@ class TextField extends React.Component {
 const styles = StyleSheet.create({
   container: {
     borderBottomColor: COLOR_PRIMARY_GRAY,
-    // fontFamily: FONT_AVENIR_MEDIUM,
     marginTop: Platform.OS === 'ios' ? '5%' : '1.5%',
     width: '93%',
     marginBottom: Platform.OS === 'ios' ? '5%' : '1.5%',
@@ -91,7 +89,6 @@ const styles = StyleSheet.create({
   input: {
     fontSize: 17,
     color: COLOR_FONT_BLACK,
-    // fontFamily: FONT_AVENIR_MEDIUM,
     width: '90%'
   },
 

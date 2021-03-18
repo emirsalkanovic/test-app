@@ -1,7 +1,6 @@
 import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import { COLOR_FONT_BLACK, COLOR_PRIMARY_WHITE } from '../assets/colors/colors';
-// import { FONT_AVENIR_MEDIUM } from '../assets/fonts/fonts';
 
 //Header bar for top navigation
 const Header = (props) => {
@@ -19,7 +18,6 @@ const styles = StyleSheet.create({
 	},
 	title: {
 		marginLeft: '1%',
-		// fontFamily: FONT_AVENIR_MEDIUM,
 		fontSize: 22,
 		color: COLOR_FONT_BLACK,
 		fontWeight: 'bold'

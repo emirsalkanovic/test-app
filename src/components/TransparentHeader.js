@@ -1,9 +1,7 @@
 import React from 'react';
-// import { withNavigation } from 'react-navigation';
 
 import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import { COLOR_FONT_BLACK, COLOR_PRIMARY_WHITE } from '../assets/colors/colors';
-// import { FONT_AVENIR_MEDIUM } from '../assets/fonts/fonts';
 
 //Header bar with transparent background used for login-signup
 const TransparentHeader = (props) => {
@@ -12,7 +10,6 @@ const TransparentHeader = (props) => {
       <View style={styles.backIconHolder}>
         <TouchableOpacity onPress={() => props.navigation.goBack()}>
           <Image
-            // source={require('../assets/new-img/arrow-left.png')}
             source={require('../assets/img/arrow-left.png')}
             style={styles.backIcon}
           />
@@ -27,7 +24,6 @@ const TransparentHeader = (props) => {
             <Image
               style={styles.settingsIcon}
               source={require('../assets/img/icon_options.png')}
-            //   source={require('../assets/new-img/icon_options.png')}
             />
           </TouchableOpacity>
           : null}
@@ -48,7 +44,6 @@ const styles = StyleSheet.create({
   headerTitle: {
     fontWeight: 'bold',
     alignSelf: 'center',
-    // fontFamily: FONT_AVENIR_MEDIUM,
     fontSize: 20,
     color: COLOR_FONT_BLACK,
     textAlign: 'center'
@@ -77,5 +72,4 @@ const styles = StyleSheet.create({
   }
 });
 
-// export default withNavigation(TransparentHeader);
 export default TransparentHeader;
